@@ -1,33 +1,21 @@
-
 {% extends 'base.html' %}
 
 {% block content %}
 
-    <style>
-        .display_attribute {
-            background-color: yellow;
-            margin: 1rem;
-            width: 48px;
-            height: 48px;
-            border-radius: .5rem;
-            display: inline-block;
 
-        }
-    </style>
-
-    <div style="height: 30rem;
-    background-color: pink;
-    margin: 2rem;
-    border-radius:1rem;
-    font-size: 2rem;">
+    <div style="text-align: center; margin: 2rem;">
 
         <h1>안녕 나는 병관이야</h1>
 
+        <form action="/accounts/hello_world/" method="POST">
+            {% csrf_token %}
+            <input type="text" name="input_text">
+            <input type="submit" class="btn btn-success rounded-pill px-5">
+        </form>
 
-        <div class="display_attribute" style="height: 24px; width: 24px;">inline-block1</div>
-        <div class="display_attribute" style="height: 3rem; width: 3rem;">inline-block2</div>
-        <div class="display_attribute" style="height: 4em; width: 4em;">inline-block3</div>
-        <div class="display_attribute" style="height: 50%; width: 50%;">inline-block4</div>
+        {% for data in data_list %}
+        <h3>{{ data.text }}</h3>
+        {% endfor %}
 
     </div>
 {% endblock %}
