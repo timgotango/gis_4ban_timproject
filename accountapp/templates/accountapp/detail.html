@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div>
+        <div>
+            <h4>{{ target_user.username }}</h4>
+        </div>
+        <div>
+            {{ target_user.date_joined }}
+        </div>
+
+        {% if user == target_user %}
+        <div>
+            <a href="{% url 'accountapp:update' pk=target_user.pk %}">회원정보 수정</a>
+        </div>
+        <div>
+            <a href="{% url 'accountapp:delete' pk=target_user.pk %}">회원 탈퇴</a>
+        </div>
+        {% endif %}
+    
+    </div>
+
+
+{% endblock %}
