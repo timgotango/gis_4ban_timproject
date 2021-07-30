@@ -1,10 +1,12 @@
 <div class="pragmatic_header">
     <div class="pragmatic_header_logo">
-        <a href="{% url 'accountapp:hello_world' %}"><h1>Tim's sky</h1></a>
+        <h1>병관이의 공중일기</h1>
     </div>
     <div class="pragmatic_header_button">
         <span>Sky</span>
-        <span>Fly</span>
+        <span>
+            <a href="{% url 'articleapp:list' %}">Articles</a>
+        </span>
         {% if not user.is_authenticated %}
         <span>
             <a href="{% url 'accountapp:login' %}">Login</a>
