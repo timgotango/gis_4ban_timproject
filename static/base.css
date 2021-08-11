@@ -1,6 +1,5 @@
 .pragmatic_header_logo {
-    font-family: 'Do Hyeon', sans-serif;
-
+    font-family: 'Tourney', cursive;
 }
 
 .pragmatic_header {
@@ -25,13 +24,9 @@
 
 
 
-.mw-500 {
+.mx-500 {
     max-width: 500px;
     padding: 1rem 1.5rem;
-}
-
-.NNS_B {
-    font-family: 'NanumSquareB', cursive;
 }
 
 
@@ -43,32 +38,11 @@
     object-fit: cover;
 }
 
-.round_button {
-    color: dimgray;
-    border-radius: 15rem;
-    text-decoration: none;
-    padding: 0.2rem;
-}
 
-.round_button:hover {
-    color: black;
-}
 
-.round_button_border {
-    box-shadow: 0 0 3px black;
-}
 
-.article_content {
-    font-size: 1.1rem;
-    text-align: left;
-    margin-left: 17rem;
-}
 
-.article_image {
-    border-radius: 1rem;
-    width: 60%;
-    box-shadow: 0 0 0.5rem grey;
-}
+
 
 
 
