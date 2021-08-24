@@ -16,3 +16,4 @@ class Article(models.Model):
     image = models.ImageField(upload_to='article/', null=True)    # media 안에 article이라는 파일이 생기고 그 안에 이미지가 저장.
     content = models.TextField(null=True)    # 장문을 쓸 경우에는 textfield
     created_at = models.DateField(auto_now_add=True, null=True)    # DB에 저장되는 순간의 시각을 알아서 찍어줌
+    like = models.IntegerField(default=0)
