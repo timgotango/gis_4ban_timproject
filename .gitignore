@@ -84,3 +84,6 @@ __pycache__/
 media/
 
 staticfiles/
+
+sky_gcp
+sky_gcp.pub
